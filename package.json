@@ -3,24 +3,27 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "sass-dev": "sass src/app/sass:src/app/dist/css --watch",
     "dev": "next dev --turbopack",
-    "build": "next build --turbopack",
+    "build": "sass src/app/sass:src/app/dist/css --style=compressed && next build --turbopack",
     "start": "next start",
     "lint": "biome check",
     "format": "biome format --write"
   },
   "dependencies": {
+    "autoprefixer": "^10.4.21",
+    "next": "15.5.4",
     "react": "19.1.0",
-    "react-dom": "19.1.0",
-    "next": "15.5.4"
+    "react-dom": "19.1.0"
   },
   "devDependencies": {
-    "typescript": "^5",
+    "@biomejs/biome": "2.2.0",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
-    "@tailwindcss/postcss": "^4",
-    "tailwindcss": "^4",
-    "@biomejs/biome": "2.2.0"
+    "postcss-flexbugs-fixes": "^5.0.2",
+    "postcss-preset-env": "^10.4.0",
+    "sass": "^1.93.2",
+    "typescript": "^5"
   }
 }
