@@ -3,9 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "sass-dev": "sass src/app/sass:src/app/dist/css --watch",
     "dev": "next dev --turbopack",
-    "build": "sass src/app/sass:src/app/dist/css --style=compressed && next build --turbopack",
+    "build": "next build --turbopack",
     "start": "next start",
     "lint": "biome check",
     "format": "biome format --write"
