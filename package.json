@@ -7,6 +7,7 @@
     "build": "next build --turbopack",
     "start": "next start",
     "lint:fix": "biome check --write",
+    "lint:fix-unself": "biome check --write --unself",
     "lint": "biome check",
     "format": "biome format --write"
   },
