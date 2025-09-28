@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./styles/scss/globals.scss";
+import Userbox from "./Component/user-info";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -27,6 +28,9 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <header>
+          <Userbox src="/avatar.jpg" level={6} user_name="我是组件！" />
+        </header>
         {children}
       </body>
     </html>
