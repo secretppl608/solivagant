@@ -1,6 +1,6 @@
 const config = {
-  plugins:
-    process.env.NODE_ENV === "production"
+  plugins: [
+    process.env.NODE_ENV === "production" || "development"
       ? [
           "postcss-flexbugs-fixes",
           [
@@ -16,9 +16,8 @@ const config = {
             },
           ],
         ]
-      : [
-          // 开发环境不应用转换
-        ],
+      : [],
+  ]
 };
 
 export default config;
