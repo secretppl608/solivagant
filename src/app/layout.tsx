@@ -3,6 +3,7 @@ import "./styles/scss/globals.scss";
 import Script from "next/script";
 // import Userbox from "./Component/user-info";
 // import type { Metadata } from "next";
+'use client'
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
