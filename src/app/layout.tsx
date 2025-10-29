@@ -1,21 +1,21 @@
 'use client'
 
-import { Geist, Geist_Mono } from "next/font/google";
+// import { Geist, Geist_Mono } from "next/font/google";
 import "./styles/scss/globals.scss";
 import Script from "next/script";
 // import Userbox from "./Component/user-info";
 // import type { Metadata } from "next";
 
 
-const geistSans = Geist({
-    variable: "--font-geist-sans",
-    subsets: ["latin"],
-});
+// const geistSans = Geist({
+//     variable: "--font-geist-sans",
+//     subsets: ["latin"],
+// });
 
-const geistMono = Geist_Mono({
-    variable: "--font-geist-mono",
-    subsets: ["latin"],
-});
+// const geistMono = Geist_Mono({
+//     variable: "--font-geist-mono",
+//     subsets: ["latin"],
+// });
 
 // export const metadata: Metadata = {
 //   title: "怪谈研究所",
@@ -66,7 +66,7 @@ export default function RootLayout({
                 <Script type="module" src="/js/user.js" defer />
             </head>
             <body
-                className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+                // className={`${geistSans.variable} ${geistMono.variable} antialiased`}
             >
                 <header className="site-header">
                     <div className="topbar">
